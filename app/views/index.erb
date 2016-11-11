@@ -1,0 +1,46 @@
+  <h1>Bienvenido a Sinatra!</h1>
+  <p>Este es un esqueleto de sinatra que armamos para ti</p>
+  <h1>PAGINA INDEX</h1>
+
+  
+  <!-- Sintaxis para crear una forma method action ahio pones la direccion de a donde quieres mandar la informacion. Con el metodo gets aparece en la parte superior del navegador -->
+<form method="get" action="/cool_url">
+  First name:<br>
+  <!-- Sintaxis para una forma de texto -->
+  <input type="text" name="firstname">
+  <br>
+  <!-- Sintaxis para un botton de submit -->
+  <input type="submit" value="Submit">
+   
+  <!-- Sintaxis para radio buttons -->
+  <br> 
+  <input type="radio" name="gender" value="Female">
+  Female:<br>
+  <input type="radio" name="gender" value="Male">
+  Male<br>
+  <!-- Sintaxis para select box dropdown menu -->
+  <br>
+  Ciudad<br>
+  <select name="mydropdown">
+  <option value="Mexico">CDMX</option>
+  <option value="Guadalajara">GDL</option>
+  <option value="Monterrey">MTY</option>
+  </select>
+</form>
+<br>
+<!-- En el caso de post la informacion que obtienes es privada y es mas recomendable para llenar formularios -->
+<form method="post" action="/cool_url">
+<input type="text" name="lastname">
+<!-- Sintaxis para un area de texto -->
+Text area:<br>
+<textarea cols="40" rows="5" name="textarea">
+  <br>
+  
+<!-- Sintaxis para crear un hash dentro de params "post[title] -->
+<input type="text" name="post[title]">
+<input type="text" name="post[price]">
+<textarea name="post[description]"></textarea>
+  <input type="submit" value="Submit">
+</form>
+
+
